@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    <meta charset="UTF-8">
+    <title>Charkopcha Peshwa Ganpati Mandal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+    <div class="logo">
+        <img src="peshwalogo-removebg-preview.png" alt="Mandal Logo">
+        <span class="site-name">Charkopcha Peshwa </span>
+    </div>
+
+    <div class="right-header">
+        <nav id="navMenu">
+            <a href="#home" onclick="toggleMenu()">Home</a>
+            <a href="#about" onclick="toggleMenu()">About</a>
+            <a href="#gallery" onclick="toggleMenu()">Gallery</a>
+            <a href="#social" onclick="toggleMenu()">Social Work</a>
+            <a href="#donate" onclick="toggleMenu()">Donate</a>
+            <a href="#contact" onclick="toggleMenu()">Contact</a>
+        </nav>
+
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+            
+        </div>
+        
+    </div>
+    <div class="lang-switch">
+            <button onclick="setLang('en')">EN</button>
+            <button onclick="setLang('mr')">मर</button>
+        </div>
+</div>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+    <div class="overlay">
+        <h1 data-key="heroTitle">॥ श्री गणेशाय नमः ॥</h1>
+        <p data-key="heroSubtitle">Charkopcha Peshwa </p>
+        <div class="hero-btns">
+            <a href="#donate" class="btn">🙏 Donate</a>
+            <a href="#gallery" class="btn btn-outline">📸 Gallery</a>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section class="section" id="about">
+    <h2 data-key="aboutTitle">About the Mandal</h2>
+    <p data-key="aboutText">
+        Charkopcha Peshwa Ganpati Mandal is dedicated to devotion, culture, and social service.
+    </p>
+</section>
+
+<!-- THIS YEAR -->
+<section class="section highlight">
+    <h2 data-key="yearTitle">This Year’s Ganpati</h2>
+    <div class="info-grid">
+        <div>🎨 <span data-key="theme">Theme</span>: Devotional Heritage</div>
+        <div>📏 <span data-key="height">Idol Height</span>: 12 Feet</div>
+        <div>🛕 <span data-key="artist">Artist</span>: Local Murti Shilpi</div>
+        <div>🕯️ <span data-key="aarti">Aarti</span>: 7:00 AM & 8:30 PM</div>
+    </div>
+</section>
+
+<!-- GALLERY -->
+<section class="section" id="gallery">
+    <h2 data-key="galleryTitle">Ganpati Gallery</h2>
+    <div class="gallery">
+        <img src="ganpati image/583994896_17906593464273558_3624956068369846271_n.webp">
+        <img src="ganpati image/584324793_18027189116766101_7024583511876476003_n.webp">
+        <img src="ganpati image/587270946_17854365183589861_471797920529712838_n.webp">
+        <img src="ganpati image/587278208_17969995109977328_8602518758705916063_n.webp">
+    </div>
+</section>
+
+<!-- SOCIAL WORK -->
+<section class="section" id="social">
+    <h2 data-key="socialTitle">Social Work</h2>
+    <div class="cards">
+        <div class="card">🩸 Blood Donation Camp</div>
+        <div class="card">🍱 Food Distribution</div>
+        <div class="card">🏥 Medical Camp</div>
+        <div class="card">🌱 Environmental Drive</div>
+    </div>
+</section>
+
+<!-- DONATION -->
+<section class="section highlight" id="donate">
+    <h2 data-key="donateTitle">Donate for Seva</h2>
+    <p data-key="donateText" style="font-weight: bold;">Your contribution helps us serve society and Ganpati Bappa.</p>
+    <img src="ganpati image/unnamed.jpg" class="qr">
+</section>
+
+<!-- CONTACT -->
+<section class="section contact-section" id="contact">
+    <h2 data-key="contactTitle">Contact Us</h2>
+
+    <div class="contact-container">
+        <!-- LEFT : CONTACT INFO -->
+        <div class="contact-info">
+            <p><strong>📍 Address:</strong> Charkop sector 8, Kandivali, Mumbai</p>
+            <p><strong>📞 Phone:</strong> +91 XXXXXXXX</p>
+            <p><strong>📧 Email:</strong> ckpw@email.com</p>
+
+            <!-- <div class="social-icons">
+                <a href="#" class="social instagram">Instagram</a>
+                <a href="#" class="social youtube">YouTube</a>
+                <a href="#" class="social whatsapp">WhatsApp</a>
+            </div> -->
+            <div class="social-icons">
+    <a href="https://www.instagram.com/charkopcha_peshwa?igsh=MnA5cnMxdXR1bmZi target=_blank" class="social instagram">
+        <i class="fab fa-instagram"></i>
+    </a>
+
+    <a href="https://youtube.com/YOURCHANNEL" target="_blank" class="social youtube">
+        <i class="fab fa-youtube"></i>
+    </a>
+
+    <a href="https://wa.me/91XXXXXXXXXX" target="_blank" class="social whatsapp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+</div>
+
+        </div>
+
+        <!-- RIGHT : MAP -->
+        <div class="contact-map">
+            <iframe 
+                src="https://www.google.com/maps?q=6R87+7W4,%20Sai%20Prem,%20Kandivali%20West,%20Mumbai%20400067&output=embed"
+                allowfullscreen=""
+                loading="lazy">
+            </iframe>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    © 2026 Charkopcha Peshwa Ganpati Mandal
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
